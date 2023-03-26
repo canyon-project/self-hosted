@@ -8,4 +8,4 @@ services:
     ports:
       - 26000:8080
     volumes:
-      - ./conf/application.yml:/usr/src/app/packages/canyon-api/conf/application.yml
+      - ./conf/application.yml:/app/packages/canyon-api/conf/application.yml
