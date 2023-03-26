@@ -14,4 +14,4 @@ services:
 networks:
   canyon-network:
     # Use a custom driver
-    driver: custom-driver
+    driver: self-hosted_canyon-network
