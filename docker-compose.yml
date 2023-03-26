@@ -9,3 +9,7 @@ services:
       - 26000:8080
     volumes:
       - ./conf/application.yml:/usr/src/app/packages/canyon-api/conf/application.yml
+networks:
+  frontend:
+    # Use a custom driver
+    driver: custom-driver-2
