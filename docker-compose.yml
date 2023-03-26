@@ -10,6 +10,6 @@ services:
     volumes:
       - ./conf/application.yml:/usr/src/app/packages/canyon-api/conf/application.yml
 networks:
-  frontend:
+  canyon:
     # Use a custom driver
     driver: custom-driver-2
