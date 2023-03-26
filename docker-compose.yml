@@ -1,0 +1,11 @@
+# yaml 配置实例
+version: '3'
+services:
+  canyon:
+    image: zhangtao25/canyon:dev
+    restart: always
+    container_name: canyon-project
+    ports:
+      - 26000:8080
+    volumes:
+      - ./conf/application.yml:/usr/src/app/packages/canyon-api/conf/application.yml
