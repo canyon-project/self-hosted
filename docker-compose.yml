@@ -7,9 +7,11 @@ services:
     container_name: canyon-project
     ports:
       - 26000:8080
+    networks:
+      - canyon-network
     volumes:
       - ./conf/application.yml:/usr/src/app/packages/canyon-api/conf/application.yml
 networks:
-  canyon:
+  canyon-network:
     # Use a custom driver
     driver: custom-driver-2
